@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import moment from 'moment';
 
 function App() {
+  var header = 'Hello react';
+  var text = 'Say something to us';
+  var date = moment().startOf('s').fromNow()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>{header}</h1>
+    <p>{text}</p>
+    <p>{date}</p>
     </div>
-  );
+  )
+    
 }
 
 export default App;
